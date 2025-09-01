@@ -11,7 +11,14 @@ const main = async () => {
     }
   })
 
+  // findUnique or FindUniqueOrThrow post by id
+  const findUnique = await prisma.post.findUnique({
+    where: {
+      id: 1
+    }
+  })
+
   console.log("Single post retrieved:");
-  console.log({findFirst});
+  console.log({findUnique});
 };
-main();
+main(); 
