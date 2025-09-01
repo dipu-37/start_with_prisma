@@ -11,12 +11,13 @@ const main = async () => {
     // });
     // console.log(deletePost);
 
-    const deleteMany = await prisma.post.deleteMany({
-        where: {
-            published: false
-        }
-    });
-    console.log(deleteMany);
+    // const deleteMany = await prisma.post.deleteMany({
+    //     where: {
+    //         published: false
+    //     }
+    // });
+    // console.log(deleteMany);
+
 };
 
 main();
